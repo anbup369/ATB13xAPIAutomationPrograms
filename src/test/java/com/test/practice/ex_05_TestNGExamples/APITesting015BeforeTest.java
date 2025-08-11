@@ -4,7 +4,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class APITesting015_BeforeTest {
+public class APITesting015BeforeTest {
 
     // PUT Request
     // 1. getToken

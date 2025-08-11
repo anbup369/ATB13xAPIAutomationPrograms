@@ -2,7 +2,7 @@ package com.test.practice.ex_05_TestNGExamples;
 
 import org.testng.annotations.Test;
 
-public class APITesting_Soft_VS_HARD_AlwaysRun {
+public class APITestingSoftVSHARDAlwaysRunTest {
 
     @Test
     public void login() { /* might fail */ }

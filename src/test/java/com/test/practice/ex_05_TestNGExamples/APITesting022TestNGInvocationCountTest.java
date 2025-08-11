@@ -2,7 +2,7 @@ package com.test.practice.ex_05_TestNGExamples;
 
 import org.testng.annotations.Test;
 
-public class APITesting022_TestNG_invocationCount {
+public class APITesting022TestNGInvocationCountTest {
 
     @Test(invocationCount = 2)
     public void test01(){

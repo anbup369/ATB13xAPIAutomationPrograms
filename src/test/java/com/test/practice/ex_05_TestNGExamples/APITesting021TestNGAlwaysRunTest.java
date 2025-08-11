@@ -3,17 +3,20 @@ package com.test.practice.ex_05_TestNGExamples;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class APITesting020_TestNG_Enabled {
+public class APITesting021TestNGAlwaysRunTest {
+
     @Test
-    public void test01() {
+    public void test_new_register() {
         Assert.assertTrue(true);
     }
-    @Test(enabled = false)
-    public void test02() {
+
+    @Test(alwaysRun = true)
+    public void test_loginPage() {
         Assert.assertTrue(true);
     }
+
     @Test
-    public void test03() {
+    public void test_normal() {
         Assert.assertTrue(true);
     }
 }

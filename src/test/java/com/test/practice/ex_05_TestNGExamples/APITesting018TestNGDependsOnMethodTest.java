@@ -3,7 +3,7 @@ package com.test.practice.ex_05_TestNGExamples;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class APITesting018_TestNG_DependsOnMethod {
+public class APITesting018TestNGDependsOnMethodTest {
 
     @Test
     public void serverStartedOk() {

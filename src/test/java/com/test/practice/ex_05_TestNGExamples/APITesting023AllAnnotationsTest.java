@@ -2,7 +2,7 @@ package com.test.practice.ex_05_TestNGExamples;
 
 import org.testng.annotations.*;
 
-public class APITesting023AllAnnotations {
+public class APITesting023AllAnnotationsTest {
 
     @BeforeSuite
     public void beforeSuite() {

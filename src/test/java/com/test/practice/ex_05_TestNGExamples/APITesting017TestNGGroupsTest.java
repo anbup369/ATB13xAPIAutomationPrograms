@@ -3,7 +3,7 @@ package com.test.practice.ex_05_TestNGExamples;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class APITesting017_TestNG_Groups {
+public class APITesting017TestNGGroupsTest {
 
     // reg -> all the 3 testcase
     // sanity -> sanity run = 1

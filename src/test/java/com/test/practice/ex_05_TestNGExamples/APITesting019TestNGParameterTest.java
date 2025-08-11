@@ -3,7 +3,7 @@ package com.test.practice.ex_05_TestNGExamples;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class APITesting019_TestNG_Parameter {
+public class APITesting019TestNGParameterTest {
 
 
     @Parameters("browser")

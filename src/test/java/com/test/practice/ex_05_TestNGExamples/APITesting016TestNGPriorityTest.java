@@ -2,7 +2,7 @@ package com.test.practice.ex_05_TestNGExamples;
 
 import org.testng.annotations.Test;
 
-public class APITesting016_TestNG_Priority {
+public class APITesting016TestNGPriorityTest {
 
     @Test(priority = 1)
     public void test_t1(){
