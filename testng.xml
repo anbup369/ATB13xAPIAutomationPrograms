@@ -1,2 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="F:/Education/java projects/ATB13xAPIAutomationPrograms"><classes><class name="com.test.HealthCheckTest"><methods><include name="healthCheckTest"/></methods></class><class name="com.test.practice.ex_03_TestNG_AllureReoprt.APITesting_Lab06_TestCase"><methods><include name="test_tc1_pincode_valid"/><include name="test_tc2_pincode_invalid"/><include name="test_tc3_pincode_invalid"/></methods></class><class name="com.test.practice.ex_03_TestNG_AllureReoprt.TempTestNG"><methods><include name="test_pramod"/></methods></class></classes></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="F:/Education/java projects/ATB13xAPIAutomationPrograms/src/test/java/com/test/practice/ex_05_TestNGExamples">
+        <classes>
+            <class name="com.test.practice.ex_05_TestNGExamples.APITesting014Test">
+                <methods>
+                    <include name="test_post_request2"/>
+                </methods>
+            </class>
+            <class name="com.test.practice.ex_05_TestNGExamples.APITesting015BeforeTest">
+                <methods>
+                    <include name="test_PUT"/>
+                </methods>
+            </class>
+            <class name="com.test.practice.ex_05_TestNGExamples.APITesting016TestNGPriorityTest">
+                <methods>
+                    <include name="test_t1"/>
+                    <include name="test_t2"/>
+                    <include name="test_t3"/>
+                    <include name="test_t4"/>
+                </methods>
+            </class>
+            <class name="com.test.practice.ex_05_TestNGExamples.APITesting018TestNGDependsOnMethodTest">
+                <methods>
+                    <include name="serverStartedOk"/>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                </methods>
+            </class>
+            <class name="com.test.practice.ex_05_TestNGExamples.APITesting019TestNGParameterTest">
+                <methods>
+                    <include name="demo1"/>
+                </methods>
+            </class>
+            <class name="com.test.practice.ex_05_TestNGExamples.APITesting020TestNGEnabledTest">
+                <methods>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                    <include name="test03"/>
+                </methods>
+            </class>
+            <class name="com.test.practice.ex_05_TestNGExamples.APITesting021TestNGAlwaysRunTest">
+                <methods>
+                    <include name="test_new_register"/>
+                    <include name="test_loginPage"/>
+                    <include name="test_normal"/>
+                </methods>
+            </class>
+            <class name="com.test.practice.ex_05_TestNGExamples.APITesting022TestNGInvocationCountTest">
+                <methods>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                </methods>
+            </class>
+            <class name="com.test.practice.ex_05_TestNGExamples.APITesting023AllAnnotationsTest">
+                <methods>
+                    <include name="testMethod1"/>
+                    <include name="testMethod2"/>
+                    <include name="afterMethod"/>
+                    <include name="dataDrivenTest"/>
+                </methods>
+            </class>
+            <class name="com.test.practice.ex_05_TestNGExamples.APITestingSoftVSHARDAlwaysRunTest">
+                <methods>
+                    <include name="login"/>
+                    <include name="placeOrder"/>
+                    <include name="closeBrowser"/>
+                </methods>
+            </class>
+            <class name="com.test.practice.ex_05_TestNGExamples.parallel.class_level_cross_browser_Testing.ChromeTest">
+                <methods>
+                    <include name="test_chrome1"/>
+                    <include name="test_chrome2"/>
+                </methods>
+            </class>
+            <class name="com.test.practice.ex_05_TestNGExamples.parallel.class_level_cross_browser_Testing.FireFoxTest">
+                <methods>
+                    <include name="test_firefox"/>
+                </methods>
+            </class>
+            <class name="com.test.practice.ex_05_TestNGExamples.parallel.method_level.LoginTest">
+                <methods>
+                    <include name="validLogin"/>
+                    <include name="invalidLogin"/>
+                    <include name="invalidLogin2"/>
+                </methods>
+            </class>
+            <class name="com.test.practice.ex_05_TestNGExamples.parallel.test_level.APISmokeTest">
+                <methods>
+                    <include name="test_API_Smoke"/>
+                </methods>
+            </class>
+            <class name="com.test.practice.ex_05_TestNGExamples.parallel.test_level.DBSmokeTest">
+                <methods>
+                    <include name="test_DB_Smoke"/>
+                </methods>
+            </class>
+            <class name="com.test.practice.ex_05_TestNGExamples.parallel.test_level.UISmokeTest">
+                <methods>
+                    <include name="test_UI_Smoke"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
