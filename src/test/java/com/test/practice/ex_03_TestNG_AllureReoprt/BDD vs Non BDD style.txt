@@ -1,0 +1,48 @@
+----------------------------------------------------------------------------------------------------------
+|                          RestAssured Style Comparison                                                   |
+----------------------------------------------------------------------------------------------------------
+| Feature               | BDD Style                              | Non-BDD Style                          |
+|-----------------------|----------------------------------------|----------------------------------------|
+| Syntax                | Fluent, readable                       | More verbose, procedural               |
+| Structure             | given() → when() → then()              | RequestSpecification → Response → Assert |
+| Readability           | High (resembles natural language)      | Moderate (more technical)              |
+| Test Intent Clarity   | Clear behavior-driven flow             | Focused on implementation steps        |
+| Example               | given().when().get().then()            | RestAssured.given().get();             |
+| Use Case              | Ideal for collaboration, BDD frameworks| Good for low-level control             |
+| Assertion Integration | Inline with then()                     | Separate step after response           |
+-----------------------------------------------------------------------------------------------------------
+
+
+BDD Style Example
+given()
+    .baseUri("https://api.zippopotam.us")
+    .basePath("/IN/560048")
+.when()
+    .get()
+.then()
+    .statusCode(200)
+    .log().all();
+
+
+- Pros: Clean, expressive, easy to understand.
+- Why use it: Great for teams practicing Behavior-Driven Development (BDD), where tests describe behavior in a human-readable format.
+
+
+Non-BDD Style Example
+RestAssured.baseURI = "https://api.zippopotam.us";
+RequestSpecification request = RestAssured.given();
+request.basePath("/IN/560048");
+
+Response response = request.get();
+ValidatableResponse vr = response.then();
+vr.statusCode(200);
+
+
+- Pros: More flexible, allows step-by-step control.
+- Why use it: Useful when you need to manipulate request/response objects directly or integrate with custom logic.
+
+
+ Why the Difference Matters
+- BDD Style is preferred when clarity, collaboration, and maintainability are key—especially in agile teams or when using Cucumber.
+- Non-BDD Style is better for technical deep-dives, debugging, or when building reusable request/response components.
+
