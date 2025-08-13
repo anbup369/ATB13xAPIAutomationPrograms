@@ -2,104 +2,31 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true"
-          name="F:/Education/java projects/ATB13xAPIAutomationPrograms/src/test/java/com/test/practice/ex_05_TestNGExamples">
+          name="F:/Education/java projects/ATB13xAPIAutomationPrograms/src/test/java/herokuapp/restfulbooker">
         <classes>
-            <class name="com.test.practice.ex_05_TestNGExamples.APITesting014Test">
+            <class name="herokuapp.restfulbooker.tests.CreateBookingTests">
                 <methods>
-                    <include name="test_post_request2"/>
+                    <include name="CreateBooking_with_all_data"/>
+                    <include name="CreateBooking_with_empty_body"/>
+                    <include name="CreateBooking_with_invalid_json"/>
+                    <include name="CreateBooking_without_optional_data"/>
+                    <include name="CreateBooking_without_required_data"/>
+                    <include name="CreateBooking_with_invalid_field_name"/>
+                    <include name="CreateBooking_with_invalid_field_value"/>
+                    <include name="CreateBooking_without_contentType"/>
+                    <include name="CreateBooking_without_accept"/>
+                    <include name="CreateBooking_edge_case_additional_data"/>
+                    <include name="CreateBooking_edge_case_boundary_data"/>
+                    <include name="CreateBooking_edge_case_special_characters"/>
                 </methods>
             </class>
-            <class name="com.test.practice.ex_05_TestNGExamples.APITesting015BeforeTest">
+            <class name="herokuapp.restfulbooker.tests.HealthCheckPingTests">
                 <methods>
-                    <include name="test_PUT"/>
-                </methods>
-            </class>
-            <class name="com.test.practice.ex_05_TestNGExamples.APITesting016TestNGPriorityTest">
-                <methods>
-                    <include name="test_t1"/>
-                    <include name="test_t2"/>
-                    <include name="test_t3"/>
-                    <include name="test_t4"/>
-                </methods>
-            </class>
-            <class name="com.test.practice.ex_05_TestNGExamples.APITesting018TestNGDependsOnMethodTest">
-                <methods>
-                    <include name="serverStartedOk"/>
-                    <include name="test1"/>
-                    <include name="test2"/>
-                </methods>
-            </class>
-            <class name="com.test.practice.ex_05_TestNGExamples.APITesting019TestNGParameterTest">
-                <methods>
-                    <include name="demo1"/>
-                </methods>
-            </class>
-            <class name="com.test.practice.ex_05_TestNGExamples.APITesting020TestNGEnabledTest">
-                <methods>
-                    <include name="test01"/>
-                    <include name="test02"/>
-                    <include name="test03"/>
-                </methods>
-            </class>
-            <class name="com.test.practice.ex_05_TestNGExamples.APITesting021TestNGAlwaysRunTest">
-                <methods>
-                    <include name="test_new_register"/>
-                    <include name="test_loginPage"/>
-                    <include name="test_normal"/>
-                </methods>
-            </class>
-            <class name="com.test.practice.ex_05_TestNGExamples.APITesting022TestNGInvocationCountTest">
-                <methods>
-                    <include name="test01"/>
-                    <include name="test02"/>
-                </methods>
-            </class>
-            <class name="com.test.practice.ex_05_TestNGExamples.APITesting023AllAnnotationsTest">
-                <methods>
-                    <include name="testMethod1"/>
-                    <include name="testMethod2"/>
-                    <include name="afterMethod"/>
-                    <include name="dataDrivenTest"/>
-                </methods>
-            </class>
-            <class name="com.test.practice.ex_05_TestNGExamples.APITestingSoftVSHARDAlwaysRunTest">
-                <methods>
-                    <include name="login"/>
-                    <include name="placeOrder"/>
-                    <include name="closeBrowser"/>
-                </methods>
-            </class>
-            <class name="com.test.practice.ex_05_TestNGExamples.parallel.class_level_cross_browser_Testing.ChromeTest">
-                <methods>
-                    <include name="test_chrome1"/>
-                    <include name="test_chrome2"/>
-                </methods>
-            </class>
-            <class name="com.test.practice.ex_05_TestNGExamples.parallel.class_level_cross_browser_Testing.FireFoxTest">
-                <methods>
-                    <include name="test_firefox"/>
-                </methods>
-            </class>
-            <class name="com.test.practice.ex_05_TestNGExamples.parallel.method_level.LoginTest">
-                <methods>
-                    <include name="validLogin"/>
-                    <include name="invalidLogin"/>
-                    <include name="invalidLogin2"/>
-                </methods>
-            </class>
-            <class name="com.test.practice.ex_05_TestNGExamples.parallel.test_level.APISmokeTest">
-                <methods>
-                    <include name="test_API_Smoke"/>
-                </methods>
-            </class>
-            <class name="com.test.practice.ex_05_TestNGExamples.parallel.test_level.DBSmokeTest">
-                <methods>
-                    <include name="test_DB_Smoke"/>
-                </methods>
-            </class>
-            <class name="com.test.practice.ex_05_TestNGExamples.parallel.test_level.UISmokeTest">
-                <methods>
-                    <include name="test_UI_Smoke"/>
+                    <include name="getEndpointStatus_https"/>
+                    <include name="getEndpointStatus_http"/>
+                    <include name="getEndpointStatus_Invalid_Uri_Path"/>
+                    <include name="getEndpointStatus_Invalid_Base_Uri_subdomain"/>
+                    <include name="getEndpointStatus_Invalid_Base_Uri_Domain"/>
                 </methods>
             </class>
         </classes>
