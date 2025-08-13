@@ -7,13 +7,12 @@
             <run>
                 <include name="reg"></include>
 
-<!--                <include name="reg"></include>-->
-<!--                <exclude name="smoke"></exclude>-->
+                <!--                <include name="reg"></include>-->
+                <!--                <exclude name="smoke"></exclude>-->
 
 
             </run>
         </groups>
-
 
 
         <classes>

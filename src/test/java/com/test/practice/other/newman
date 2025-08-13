@@ -1,0 +1,31 @@
+Using Newman
+
+Newman is a command-line Collection Runner for Postman. It enables you to run and test a Postman Collection directly from the command line.
+Install Command
+
+npm install -g newman
+
+Run Command
+
+    newman run “Path/CollectionName.json” -e Path/EnvironmentName.json
+    newman run “Collection Link” -e “Path”/EnvironmentName.json
+
+Create HTML Report
+Install Command
+
+npm install -g newman-reporter-html
+
+or
+
+npm install -g newman-reporter-htmlextra
+
+Report Run Command
+
+    newman run CollectionName.json -e EnvironmentName.json -r cli,html
+    or
+    newman run CollectionName.json -e EnvironmentName.json -r cli,htmlextra
+
+
+Report to be save at specific location :newman run CollectionName.json -e EnvironmentName.json -r cli,html --reporter-html-export output/report.html
+
+newman folder will be created at room of CollectionName.json file, we can open can view the dashboard.
